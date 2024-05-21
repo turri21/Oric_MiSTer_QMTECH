@@ -87,7 +87,7 @@ module sys_top
 	//output        SDIO_CLK,
 
 	//////////// I/O ///////////
-	// No video signal if these are not disabled : MiSTer QMTECH //
+	// Senhor: No video signal if the following I/O definitions are not disabled //
 	//output        LED_USER,
 	//output        LED_HDD,
 	//output        LED_POWER,
