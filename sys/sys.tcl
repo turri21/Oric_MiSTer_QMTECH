@@ -3,10 +3,6 @@ set_global_assignment -name DEVICE 5CSEMA6U23A7
 set_global_assignment -name DEVICE_FILTER_PACKAGE UFBGA
 set_global_assignment -name DEVICE_FILTER_PIN_COUNT 672
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 7
-set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
-set_global_assignment -name MAX_CORE_JUNCTION_TEMP 125
-set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
-set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS OUTPUT DRIVING GROUND"
 
 #============================================================
@@ -16,8 +12,6 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_CLK1_50
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_CLK2_50
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_CLK3_50
 set_location_assignment PIN_V11 -to FPGA_CLK1_50
-
-#Senhor: The clocks should be the same as in DE10-Nano.
 set_location_assignment PIN_Y13 -to FPGA_CLK2_50
 set_location_assignment PIN_E11 -to FPGA_CLK3_50
 
@@ -138,7 +132,6 @@ set_location_assignment PIN_AG6 -to HDMI_TX_D[21]
 set_location_assignment PIN_AF9 -to HDMI_TX_D[22]
 set_location_assignment PIN_AE8 -to HDMI_TX_D[23]
 set_location_assignment PIN_T8 -to HDMI_TX_HS
-set_location_assignment PIN_AF11 -to HDMI_TX_INT
 set_location_assignment PIN_V13 -to HDMI_TX_VS
 
 #============================================================
